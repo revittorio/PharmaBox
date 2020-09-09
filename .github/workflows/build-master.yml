@@ -33,9 +33,9 @@ jobs:
         run: nuget restore PharmaBox.sln
 
       #Run Build DotNet Core
-      - name: Build DotNet Core
-        working-directory: WebApp
-        run: msbuild PharmaBox.sln
+      #- name: Build DotNet Core
+      #  working-directory: WebApp
+      #  run: msbuild PharmaBox.sln
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
