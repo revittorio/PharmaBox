@@ -1,0 +1,29 @@
+
+
+@media all and (-ms-high-contrast:none)
+     {
+      // .main-container {
+      //   height: calc(100% - 90px) !important;
+      // }
+  }
+
+#application-header {
+//  height: 56px;
+    //background-color: #e4505e; 
+}
+
+#application-breadcrumb .breadcrumb{
+  font-size: small;
+  padding: 5px 10px 5px 40px;
+  margin: 0px;
+  background-color: #fbfcfd;
+  box-shadow: 0px 1px 2px 0px #e0e0e0;
+}
+
+#application-mainbody {
+  margin: 10px;
+  height: calc(100% - 130px);
+  background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url(/assets/images/pharmabox-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

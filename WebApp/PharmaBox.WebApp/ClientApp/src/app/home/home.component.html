@@ -1,0 +1,50 @@
+<div class="content-wrapper">
+  <div class="container-fluid">
+    <div class="row tile-container">
+
+      <!-- Icon Cards-->
+      <div (click)="pharmaBoxOpen();" class="col-lg-4 col-md-4 col-sm-6 col-12 mb-2 mt-4 tile-icon">
+        <div class="inforide">
+          <div class="row">
+            <div [ngStyle]="{'background-color': PharmaBoxColor}" class="col-lg-3 col-md-4 col-sm-4 col-4 rideone">
+              <img src="/assets/images/pharmabox-logo.png">
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+              <h4>Scatola Medicinali</h4>
+              <h2>20</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div (click)="therapyOpen();" class="col-lg-4 col-md-4 col-sm-6 col-12 mb-2 mt-4 tile-icon">
+        <div class="inforide">
+          <div class="row">
+            <div [ngStyle]="{'background-color': TheraphyColor}" class="col-lg-3 col-md-4 col-sm-4 col-4 ridetwo">
+              <img src="/assets/images/prescription-icon.png">
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+              <h4>Terapie</h4>
+              <h2>120</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-2 mt-4 tile-icon">
+        <div class="inforide">
+          <div class="row">
+            <div [ngStyle]="{'background-color': SSNColor}" class="col-lg-3 col-md-4 col-sm-4 col-4 ridethree">
+              <img src="/assets/images/ssn-logo.png">
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
+              <h4>Farmaci SSN</h4>
+              <h2>50</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

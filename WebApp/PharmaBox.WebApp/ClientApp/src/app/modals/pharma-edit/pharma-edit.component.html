@@ -1,0 +1,41 @@
+<div mat-dialog-title>
+  <img src="/assets/images/pharmabox-logo.png" width="20" height="20">
+  <h1>{{data.title}}</h1>
+</div>
+
+<div mat-dialog-content>
+  <div class="field-row">
+    <p>Codice</p>
+    <mat-form-field>
+      <input matInput required placeholder="Inserire il codice" title="Codice del farmaco" [(ngModel)]="model.codice">
+    </mat-form-field>
+  </div>
+  <div class="field-row">
+    <p>Denominazione e Confezione</p>
+    <mat-form-field>
+      <input matInput required placeholder="Inserire la denominazione" title="Denominazione e tipologia di confezione del farmaco" [(ngModel)]="model.nome">
+    </mat-form-field>
+  </div>
+  <div class="field-row">
+    <p>Quantità</p>
+    <mat-form-field>
+      <input matInput required placeholder="Inserire la quantità" title="Quantità totale del farmaco contenuta nella confezione" type="number" [(ngModel)]="model.quantita">
+    </mat-form-field>
+  </div>
+  <div class="field-row">
+    <p>Scadenza</p>
+    <mat-form-field>
+      <input matInput required placeholder="Inserire la data di scadenza" title="Data di scadenza riportata sulla confezione del farmaco" type="date" [(ngModel)]="model.scadenza">
+    </mat-form-field>
+  </div>
+  <div class="field-row">
+    <p>Rimanenza</p>
+    <mat-form-field>
+      <input matInput required placeholder="Inserire la rimanenza" title="Rimanenza attuale di farmaco all'interno della confezione" type="number" [(ngModel)]="model.rimanenza">
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Annulla</button>
+  <button mat-button [mat-dialog-close]="model" cdkFocusInitial>Aggiungi</button>
+</div>

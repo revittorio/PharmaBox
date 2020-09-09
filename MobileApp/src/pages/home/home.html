@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Default Buttons</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <button ion-button color="primary" style="width: 100%;" (click)="manageBox()">Manage Box</button>
+  <button ion-button color="secondary" style="width: 100%;" (click)="therapy()">Therapy</button>
+  <button ion-button color="tertiary" style="width: 100%;" (click)="searchPage()">Search Pharma</button>
+</ion-content>

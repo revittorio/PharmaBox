@@ -1,0 +1,1 @@
+EMPTY FILE - this file will be filled building with --prod option

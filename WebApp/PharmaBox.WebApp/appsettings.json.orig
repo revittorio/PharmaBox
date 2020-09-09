@@ -1,0 +1,18 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AcmAuthorizationEndpoint": "https://server/acm",
+  "AcmCompanyChartEndpoint": "http://server/CompanyChart/",
+  "AcmAuthorizationSvc": "https://server/acmws/AcmServiceApp.svc",
+  "LicenseServerEndpoint": "https://server/LicenseManager",
+  "EPServiceUrl": "http://server",
+  "AllowedHosts": "*",
+  "DbFileNameConfig": "dbConnectionFile.json",
+  "CompanyChartNode": ""
+}
+

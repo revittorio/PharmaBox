@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1024610500932",
+    "firebase_url": "https://pharmabox-15cbf.firebaseio.com",
+    "project_id": "pharmabox-15cbf",
+    "storage_bucket": "pharmabox-15cbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024610500932:android:f138c136191fc2b29d5711",
+        "android_client_info": {
+          "package_name": "org.revittorio.pharmabox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024610500932-jjouqj5tucpkbith16ga84qfurfu9qhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnyR-6YyT3_RGwP5EuGAfBeDbgN0fn8Mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024610500932-jjouqj5tucpkbith16ga84qfurfu9qhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<ion-menu>
+  <ion-content style="background-color: grey;">
+    <ion-list style="margin-top: 60px;">
+      <div *ngFor="let item of bottomMenu">
+        <ion-item no-lines button style="background-color: grey;">
+          <div class="group-navigation-content" (click)="openPage(item)">
+            <ion-icon name="{{item.icon}}"></ion-icon>
+            {{item.title}}
+          </div>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

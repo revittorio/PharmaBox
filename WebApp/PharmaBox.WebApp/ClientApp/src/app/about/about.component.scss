@@ -1,0 +1,42 @@
+#about-page {
+    margin-left: 200px;
+}
+
+#about-logo {
+    height: 400px;
+    width: 400px;
+}
+
+#about-title-section {
+    position: absolute;
+    left: 800px;
+    top: 200px;
+    text-align: center;
+}
+
+#about-title {
+    font-size: 60px;
+    color: red;
+    text-shadow: 2px 2px 8px black;
+    font-variant: small-caps;
+    border-bottom: 2px solid #f2f2f2;
+    padding: 0px 12px 5px 12px;
+}
+
+#about-version {
+    font-weight: bold;
+    color: lightslategray;
+    font-size: small;
+}
+
+#about-developer {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: serif;
+    font-size: small;
+}
+
+#about-mailto {
+    font-family: serif;
+    font-size: small;
+}
