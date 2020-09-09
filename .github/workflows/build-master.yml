@@ -21,10 +21,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@test-build
+
+      #Run Nuget Restore
+      - name: Install NuGet
+        uses: nuget/setup-nuget@v1
         with:
           nuget-version: '5.x'
 
-      #Run Nuget Restore
       - name: Restore NuGet packages
         working-directory: WebApp
         run: nuget restore PharmaBox.sln
