@@ -23,14 +23,14 @@ jobs:
       - uses: actions/checkout@test-build
 
       #Run Nuget Restore
-      - name: Install NuGet
-        uses: nuget/setup-nuget@v1
-        with:
-          nuget-version: '5.x'
+      #- name: Install NuGet
+      #  uses: nuget/setup-nuget@v1
+      #  with:
+      #    nuget-version: '5.x'
 
-      - name: Restore NuGet packages
-        working-directory: WebApp
-        run: nuget restore PharmaBox.sln
+      #- name: Restore NuGet packages
+      #  working-directory: WebApp
+      #  run: nuget restore PharmaBox.sln
 
       #Run Build DotNet Core
       #- name: Build DotNet Core
