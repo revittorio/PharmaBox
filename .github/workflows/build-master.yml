@@ -21,13 +21,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
+        with:
+          nuget-version: '5.x'
 
       #Run Nuget Restore
       - name: Restore NuGet packages
-      - uses: nuget/setup-nuget@v1
-        with:
-          nuget-version: '5.x'
-      - run: nuget restore WebApp/PharmaBox.sln
+        working-directory: WebApp
+        run: nuget restore PharmaBox.sln
 
       #Run Build DotNet Core
       - name: Build DotNet Core
