@@ -14,31 +14,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr *ngFor="let item of items">
             <td class="row-toolbar">
               <fa-icon icon="trash-alt" title="Cancella farmaco"></fa-icon>
-              <fa-icon icon="edit" title="Modifica farmaco"></fa-icon>
+              <fa-icon icon="edit" title="Modifica farmaco" (click)="edit(item)"></fa-icon>
               <fa-icon icon="plus-square" title="Aggiungi confezione" (click)="add()"></fa-icon>
-          </td>
-            <td>44868038</td>
-            <td>ABERIPRA 28x1 cpr 10 mg</td>
-            <td>28 (nr)</td>
-            <td>10/10/2021</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td>44868038</td>
-            <td>ACIDO TRANEXAMICO*5 fiale EV OS 500 mg 5 ml</td>
-            <td>5</td>
-            <td>10/10/2021</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>44868038</td>
-            <td>ACICLOVIR*os sosp 100 ml 8% flacone</td>
-            <td>100 (ml)</td>
-            <td>10/10/2021</td>
-            <td>75</td>
+            </td>
+            <td>{{item.codice}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.quantita}} ({{item.uom}})</td>
+            <td>{{item.scadenza}}</td>
+            <td>{{item.rimanenza}}</td>
           </tr>
         </tbody>
       </table>

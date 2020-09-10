@@ -6,7 +6,7 @@
 				"start": "ng serve --port 4400",
 				"npm_install": "npm i",
 				"build": "node --max_old_space_size=5048 ./node_modules/@angular/cli/bin/ng build",
-				"build-prod": "&& node --max_old_space_size=5048 ./node_modules/@angular/cli/bin/ng build --prod",
+				"build-prod": "node --max_old_space_size=5048 ./node_modules/@angular/cli/bin/ng build --prod",
 				"test": "ng test",
 				"lint": "ng lint",
 				"e2e": "ng e2e"

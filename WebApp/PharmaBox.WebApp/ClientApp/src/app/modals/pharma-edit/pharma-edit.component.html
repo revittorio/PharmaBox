@@ -7,35 +7,40 @@
   <div class="field-row">
     <p>Codice</p>
     <mat-form-field>
-      <input matInput required placeholder="Inserire il codice" title="Codice del farmaco" [(ngModel)]="model.codice">
+      <input cdkFocusInitial matInput required title="Codice del farmaco" [(ngModel)]="model.codice" [formControl]="codiceValidator">
+      <mat-error *ngIf="codiceValidator.invalid">Codice è un campo obbligatorio</mat-error>
     </mat-form-field>
   </div>
   <div class="field-row">
     <p>Denominazione e Confezione</p>
     <mat-form-field>
-      <input matInput required placeholder="Inserire la denominazione" title="Denominazione e tipologia di confezione del farmaco" [(ngModel)]="model.nome">
+      <input matInput required title="Denominazione e tipologia di confezione del farmaco" [(ngModel)]="model.nome" [formControl]="nomeValidator">
+      <mat-error *ngIf="nomeValidator.invalid">Nome è un campo obbligatorio</mat-error>
     </mat-form-field>
   </div>
   <div class="field-row">
     <p>Quantità</p>
     <mat-form-field>
-      <input matInput required placeholder="Inserire la quantità" title="Quantità totale del farmaco contenuta nella confezione" type="number" [(ngModel)]="model.quantita">
+      <input matInput required title="Quantità totale del farmaco contenuta nella confezione" type="number" [(ngModel)]="model.quantita" [formControl]="quantitaValidator">
+      <mat-error *ngIf="quantitaValidator.invalid">Quantità deve essere un numero positivo</mat-error>
     </mat-form-field>
   </div>
   <div class="field-row">
     <p>Scadenza</p>
     <mat-form-field>
-      <input matInput required placeholder="Inserire la data di scadenza" title="Data di scadenza riportata sulla confezione del farmaco" type="date" [(ngModel)]="model.scadenza">
+      <input matInput required title="Data di scadenza riportata sulla confezione del farmaco" type="date" [(ngModel)]="model.scadenza" [formControl]="scadenzaValidator">
+      <mat-error *ngIf="scadenzaValidator.invalid">Scadenza è un campo obbligatorio</mat-error>
     </mat-form-field>
   </div>
   <div class="field-row">
     <p>Rimanenza</p>
     <mat-form-field>
-      <input matInput required placeholder="Inserire la rimanenza" title="Rimanenza attuale di farmaco all'interno della confezione" type="number" [(ngModel)]="model.rimanenza">
+      <input matInput required title="Rimanenza attuale di farmaco all'interno della confezione" type="number" [(ngModel)]="model.rimanenza" [formControl]="rimanenzaValidator">
+      <mat-error *ngIf="rimanenzaValidator.invalid">Rimanenza deve essere un numero positivo</mat-error>
     </mat-form-field>
   </div>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onCancel()">Annulla</button>
-  <button mat-button [mat-dialog-close]="model" cdkFocusInitial>Aggiungi</button>
+  <button mat-button (click)="onSave()" [disabled]="invalid()">{{data.actionName}}</button>
 </div>

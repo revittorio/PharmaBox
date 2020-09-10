@@ -118,11 +118,6 @@ namespace PharmaBox.WebApp
             app.UseAuthorization();
 
 
-            #if !DEBUG
-                app.UseLicenseManager();
-            #endif
-
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
